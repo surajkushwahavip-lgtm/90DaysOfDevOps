@@ -18,8 +18,8 @@
 .kill -9 PID → force kill processes
 
 📁 File System
-	
-Command	Usage
+
+Command	      Usage
 	
 cd	 -> 	Change the directory
 
@@ -46,16 +46,26 @@ chmod +x <file>  ->	Make a file executable before running it
 man	->	Open the manual/help page for any command
 
 *Networking Troubleshooting
+
 ping google.com - Check network connectivity.
+
 ip addr - Display IP address information.
-	  curl https://google.com - Test website response.
-	  dig google.com - DNS lookup.
-	  ss -tulpn - Show listening ports.
-	hostnamectl - Display hostname and OS information.
+
+curl https://google.com - Test website response.
+
+dig google.com - DNS lookup.
+
+ss -tulpn - Show listening ports.
+
+hostnamectl - Display hostname and OS information.
 	
 *System Monitoring
+
 free -h - Show memory usage.
+
 uptime - Display system uptime.
+
 df -h | awk 'NR==2 {print $5}' - Show disk usage percentage.
+
 free -h | awk 'NR==2 {print $3}' - Show used memory.	
 	
